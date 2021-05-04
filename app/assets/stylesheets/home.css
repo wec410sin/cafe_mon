@@ -46,6 +46,23 @@ header {
   padding-right: 30px;
 }
 
+.reserve h1{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  background-color: black;
+  color: white;
+  padding: 30px 15px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-family: YuMincho;
+  font-weight: normal;
+  border: double;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  z-index: 1;
+}
+
 .top{
   float: left;
   width: 50%;
@@ -54,14 +71,16 @@ header {
 .img2{
   padding-left: 210px;
 }
+.clear {
+  clear:both
+}
 .top-news{
   text-align: center;
-
 }
 .top-news span{
   background-color: #333333;
   color: white;
-  padding: 40px 150px;
+  padding: 40px 100px;
   border: solid black;
   font-weight: bold;
 }
@@ -93,9 +112,6 @@ header {
   padding-top: 300px;
   padding-right: 50px;
   text-align: right;
-  -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-
 }
 .second-wrapper-message h1{
   font-weight: normal;
@@ -141,6 +157,7 @@ footer{
 .footer-center{
   color: white;
 }
+
 .footer-right{
   padding-top: 60px;
 }
