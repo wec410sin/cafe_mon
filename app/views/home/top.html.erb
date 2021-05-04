@@ -4,7 +4,40 @@
     <meta charset="utf-8">
     <title>cafe Mon</title>
     <link rel="stylesheet" href="stylesheet.css">
-  </head>
+    <style type="text/css">
+    #photo {
+        width: 1000px;
+        height: 700px;
+        margin-top: 100px;
+        float: right;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #photo img {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    </style>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var setImg = '#photo';
+        var fadeSpeed = 1600;
+        var switchDelay = 5000;
+
+        $(setImg).children('img').css({opacity:'0'});
+        $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+        setInterval(function(){
+            $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+        },switchDelay);
+    });
+    </script>
+   </head>
 
   <body>
    <header>
@@ -27,13 +60,27 @@
          <a href="/onlineshop" class="onlinestore">オンラインショップ</a>
        <h2>
      </div>
-     <div class="header-list-right">
-         <img src="https://photosku.com/images_file/small_images/s007_344.jpg">
-     </div>
+
    </header>
     <div class="container">
-      <div class="top-image">
-        <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.18169-9/16142255_1562849250406554_8730655884309023538_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=e3f864&_nc_ohc=Umx_Qm6dgw4AX--Ho8H&_nc_ht=scontent-lax3-2.xx&oh=adc4eff9c313ffe7c8611e6028a35c14&oe=609AF574">
+      <div class="top">
+         <img class="img1" src="https://photosku.com/images_file/small_images/s007_344.jpg">
+         <img class="img2" src="https://www.silhouette-illust.com/wp-content/uploads/2016/06/3674-300x300.jpg">
+      </div>
+      <div class="top">
+         <div id="photo">
+          <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/180687171_3757363204389453_5053397619291808234_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=BaMJI-CAutMAX9kZIme&_nc_oc=AQmqHCQ2kTKirHSRtKgxWfdT241Ph_mBHG5ZIxpDBy-VXyHidRVLb7nGkIrSnrF9_GI&_nc_ht=scontent-nrt1-1.xx&oh=5d4cd8dc876b5deced234596068ec157&oe=60B25D57" width="1000" height="700" alt="">
+          <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/179529811_3757336451058795_7395640350545334433_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=yJW_gao2U8cAX_fWwIO&_nc_ht=scontent-nrt1-1.xx&oh=c262bcec7149c54c0172125fbf1c7606&oe=60B39590" width="1000" height="700" alt="">
+          <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/180627111_3757335904392183_3535981225089727471_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=VvrIUe5rk90AX9LehIw&_nc_ht=scontent-nrt1-1.xx&oh=490c54642873d70a2bce2d90bfaeb256&oe=60B481CA" width="1000" height="700" alt="">
+          <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/180627115_3757377591054681_5093129677315287138_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=X5ZIDSLDoSMAX954rMc&_nc_ht=scontent-nrt1-1.xx&oh=b2ed63370852f86343753d625fac1f6c&oe=60B5CD34" width="1000" height="700" alt="">
+         </div>
+      </div>
+      <div class="top-news">
+        <span>
+          ラテアートの大会に出場してまいりました！　
+          JAPAN LATTE ART CHANPION SHIP 2019 大阪大会出場
+
+        </span>
       </div>
      <div class="top-wrapper">
        <div class="top-wrapper-logo">
