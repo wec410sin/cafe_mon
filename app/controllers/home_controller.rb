@@ -13,4 +13,7 @@ class HomeController < ApplicationController
 
   def onlineshop
   end
+
+  def reserve
+  end
 end
