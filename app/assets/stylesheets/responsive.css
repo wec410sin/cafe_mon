@@ -4,11 +4,11 @@
 }
 
 /* スマホ向けレイアウト */
-@media (max-width: 670px) {
+@media screen and (max-width: 670px) {
   .top {
     width: 100%;
   }
-  
+
   footer {
     text-align: center;
   }
