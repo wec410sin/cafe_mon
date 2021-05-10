@@ -1,0 +1,15 @@
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+
+}
+
+/* スマホ向けレイアウト */
+@media (max-width: 670px) {
+  .top {
+    width: 100%;
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
