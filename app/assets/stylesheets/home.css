@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
 }
+*{
+  box-sizing: border-box;
+}
 header {
+  }
+.container{
+  width: 100%;  
   }
 .header-logo img{
   width: 150px;
@@ -136,9 +142,6 @@ header {
   margin: auto;
   border: dotted black;
   padding-bottom: 50px;
-}
-.container{
-  height: 2000px;
 }
 footer{
   margin-top: 50px;
