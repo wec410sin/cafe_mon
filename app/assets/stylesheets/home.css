@@ -131,7 +131,6 @@ header {
 .second-wrapper-message h2{
   font-size: 35px;
 }
-}
 .news-header{
   width: 90px;
   margin: auto;
@@ -145,8 +144,6 @@ header {
   border: dotted black;
   padding-bottom: 50px;
 }
-/* パソコン向けレイアウト */
-@media screen and (min-width: 481px) {
   footer{
     margin-top: 50px;
     padding-top: 50px;
