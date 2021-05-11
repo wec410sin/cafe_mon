@@ -5,7 +5,7 @@
 
 /* スマホ向けレイアウト */
 @media screen and (max-width: 670px) {
-  .top {
+  .container {
     width: 100%;
   }
   footer {
