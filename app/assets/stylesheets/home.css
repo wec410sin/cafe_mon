@@ -72,6 +72,8 @@ header {
   text-decoration: none;
   color: white;
 }
+/* パソコン向けレイアウト */
+@media screen and (min-width: 481px) {
 .top{
   float: left;
   width: 50%;
@@ -128,7 +130,7 @@ header {
 }
 .second-wrapper-message h2{
   font-size: 35px;
-
+}
 }
 .news-header{
   width: 90px;
@@ -145,32 +147,32 @@ header {
 }
 /* パソコン向けレイアウト */
 @media screen and (min-width: 481px) {
-footer{
-  margin-top: 50px;
-  padding-top: 50px;
-  bottom: 0;
-  height: 400px;
-  width: 100%;
-  background-color: black;
-}
-.shop-infomation{
-  float: left;
-  width: 33%;
-}
-.footer-logo img{
-  width: 150px;
-  margin-top: 30px;
-  margin-left: 270px;
-}
-.footer-center{
-  color: white;
-}
+  footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    bottom: 0;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+  }
+  .shop-infomation{
+    float: left;
+    width: 33%;
+  }
+  .footer-logo img{
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 270px;
+  }
+  .footer-center{
+    color: white;
+  }
 
-.footer-right{
-  padding-top: 60px;
-}
-.footer-right a{
-  padding-left: 100px;
-  color: white;
-}
+  .footer-right{
+    padding-top: 60px;
+  }
+  .footer-right a{
+    padding-left: 100px;
+    color: white;
+  }
 }
