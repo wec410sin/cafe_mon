@@ -143,6 +143,8 @@ header {
   border: dotted black;
   padding-bottom: 50px;
 }
+/* パソコン向けレイアウト */
+@media screen and (min-width: 481px) {
 footer{
   margin-top: 50px;
   padding-top: 50px;
@@ -170,4 +172,5 @@ footer{
 .footer-right a{
   padding-left: 100px;
   color: white;
+}
 }
