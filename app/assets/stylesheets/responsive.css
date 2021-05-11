@@ -5,8 +5,18 @@
 
 /* スマホ向けレイアウト */
 @media screen and (max-width: 670px) {
-  .container {
+  .top {
     width: 100%;
+  }
+  .news-header{
+    margin: auto;
+    text-align: center;
+    font-family: cursive;
+  }
+  .news-body{
+    margin: auto;
+    border: dotted black;
+    padding-bottom: 50px;
   }
   footer {
     text-align: center;
