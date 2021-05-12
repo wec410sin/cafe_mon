@@ -9,7 +9,13 @@
     width: 100%;
   }
   .img1{
-    width: 100px;
+    width: 30px;
+  }
+  .img2{
+    width: 30px;
+  }
+  .img3{
+    width: 70px;
   }
   .news-header{
     margin: auto;
