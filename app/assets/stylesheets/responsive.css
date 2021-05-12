@@ -5,8 +5,11 @@
 
 /* スマホ向けレイアウト */
 @media screen and (max-width: 670px) {
-  .top {
+  .top img{
     width: 100%;
+  }
+  .img1{
+    width: 100px;
   }
   .news-header{
     margin: auto;
