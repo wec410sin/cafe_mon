@@ -1,4 +1,4 @@
-server "3.114.245.108", user: "shingo", roles: %w{app db web}
+server "35.73.95.47", user: "shingo", roles: %w{app db web}
 
 set :ssh_options, {
   keys: %w(~/.ssh/cafe_mon.pem),
