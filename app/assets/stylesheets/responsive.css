@@ -5,18 +5,65 @@
 
 /* スマホ向けレイアウト */
 @media screen and (max-width: 670px) {
-  .top {
+
+
+  .clear {
+    clear:both
+  }
+  .header-list h1 {
+    font-family: cursive;
+  }
+  .header-list h1 a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  .header-list h2 a {
+
+    font-size: 2px;
+    color: black;
+    text-decoration: none;
+  }
+  .img3 {
     width: 100%;
   }
+  .top img{
+    width: 50%;
+  }
+  .top-news span {
+    width: 100%;
+  }
+  .top-wrapper{
+    float: left;
+    width: 50%;
+  }
+  .top-wrapper img{
+    width: 100%;
+  }
+  .top-wrapper-message{
+    font-size: 2px;
+  }
+  .second-logo img {
+    width: 100%;
+  }
+  .second-wrapper {
+    float: left;
+    width: 50%;
+  }
+  .second-wrapper-message{
+    font-size: 2px;
+  }
+  .news-wrapper {
+    width: 100%;
+
+  }
   .news-header{
-    margin: auto;
     text-align: center;
     font-family: cursive;
   }
   .news-body{
-    margin: auto;
+    height: 250px;
     border: dotted black;
-    padding-bottom: 50px;
   }
   footer {
     text-align: center;
