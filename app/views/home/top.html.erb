@@ -4,49 +4,38 @@
     <meta charset="utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cafe mon 伊丹のカフェ</title>
-    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="responsive.css">
-    <style type="text/css">
-    #photo {
-        width: 1000px;
-        height: 700px;
-        margin-top: 100px;
-        float: right;
-        overflow: hidden;
-        position: relative;
-        z-index: 0;
-    }
-
-    #photo img {
-        top: 0;
-        left: 0;
-        position: absolute;
-    }
-    </style>
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-    $(function(){
-        var setImg = '#photo';
-        var fadeSpeed = 1600;
-        var switchDelay = 5000;
-
-        $(setImg).children('img').css({opacity:'0'});
-        $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-        setInterval(function(){
-            $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-        },switchDelay);
-    });
-    </script>
-   </head>
+  </head>
 
   <body>
    <header>
      <div class="container">
        <div class="header-logo">
          <img src="https://tabelog.com/imgview/original?id=r8578663815191">
+       </div>
+       <div class="hamburger-menu">
+         <input type="checkbox" id="menu-btn-check">
+         <label for="menu-btn-check" class="menu-btn"><span></span></label>
+         <div class="menu-content">
+              <ul>
+                  <li>
+                      <a href="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="/concept">Concept</a>
+                  </li>
+                  <li>
+                      <a href="/menu">Menu</a>
+                  </li>
+                  <li>
+                      <a href="/recruit">Recruit</a>
+                  </li>
+                  <li>
+                      <a href="/login">Online Shop</a>
+                  </li>
+              </ul>
+          </div>
        </div>
        <div class="header-list">
          <h1>
@@ -73,26 +62,17 @@
         <h1><a href="/reserve">ネット予約はこちら ^</a></h1>
        </div>
       <div class="top">
-         <img class="img1" src="https://photosku.com/images_file/small_images/s007_344.jpg">
-         <img class="img2" src="https://www.silhouette-illust.com/wp-content/uploads/2016/06/3674-300x300.jpg">
+         <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-0/p180x540/189660727_3828062293986210_6470552079698840312_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=e3f864&_nc_ohc=sfcUnOiaXS8AX_DQv1e&_nc_ht=scontent-lax3-1.xx&tp=6&oh=3d60071b466291f3de4e2f5129c1acc6&oe=60D6DBD7" id="photo">
       </div>
-      <div class="top">
-         <div id="photo">
-          <img class="img3" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/180687171_3757363204389453_5053397619291808234_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=730e14&_nc_ohc=BaMJI-CAutMAX9kZIme&_nc_oc=AQmqHCQ2kTKirHSRtKgxWfdT241Ph_mBHG5ZIxpDBy-VXyHidRVLb7nGkIrSnrF9_GI&_nc_ht=scontent-nrt1-1.xx&oh=5d4cd8dc876b5deced234596068ec157&oe=60B25D57" width="1000" height="700" alt="">
-          <img class="img3" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/179529811_3757336451058795_7395640350545334433_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=730e14&_nc_ohc=yJW_gao2U8cAX_fWwIO&_nc_ht=scontent-nrt1-1.xx&oh=c262bcec7149c54c0172125fbf1c7606&oe=60B39590" width="1000" height="700" alt="">
-          <img class="img3" src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/34827851_2166929553331851_7077833429219278848_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=9267fe&_nc_ohc=aYrqynrdXBIAX8Z9asC&_nc_ht=scontent-lax3-2.xx&oh=ea974d47b7c6869c8a22bd4561a4bc80&oe=60CF6C40" width="1000" height="700" alt="">
-          <img class="img3" src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/180627115_3757377591054681_5093129677315287138_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=X5ZIDSLDoSMAX954rMc&_nc_ht=scontent-nrt1-1.xx&oh=b2ed63370852f86343753d625fac1f6c&oe=60B5CD34" width="1000" height="700" alt="">
-         </div>
-      </div>
-      <div class="clear">
-      </div>
+
     </div>
       <div class="container">
         <div class="top-news">
-          <span>
-            ラテアートの大会に出場してまいりました！　
-            JAPAN LATTE ART CHANPION SHIP 2019 大阪大会出場
-          </span>
+          <h1>
+          ラテアートの大会に出場してまいりました！　
+          <br>
+          JAPAN LATTE ART CHANPION SHIP 2019 大阪大会出場
+          </h1>
         </div>
       </div>
       <div class="container">
