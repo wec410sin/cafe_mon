@@ -1,16 +1,8 @@
-<div class="main users-new">
-  <div class="container">
-    <div class="form-heading">ログイン</div>
-    <div class="form users-form">
-      <div class="form-body
-        <%= form_tag("/login") do %>
-          <p>メールアドレス</p>
-          <input name="email">
-          <p>パスワード</p>
-          <input type="password" name="password">
-          <input type="submit" value="ログイン">
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<header>
+  <% if user_signed_in? %>
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？" } %>
+  <% else %>
+    <%= link_to "新規登録", new_user_registration_path %>
+    <%= link_to "ログイン", new_user_session_path %>
+  <% end %>
+</header>
