@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
   root "home#top"
+  devise_for :users, controllers: {   registrations: 'users/registrations',
+                                    sessions: 'users/sessions' }
   get "/" => "home#top"
   get "concept" => "home#concept"
   get "menu" => "home#menu"
